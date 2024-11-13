@@ -19,8 +19,9 @@ class Shop():
         return p_set
 
     def add(self, *products):
+        current_product = self.get_products()
         for i in products:
-            if i.name not in self.get_products():
+            if str(i) not in current_product:
                 file = open(self.__file_name, 'a')
                 file.write(f'{i}\n')
                 file.close()
