@@ -1,5 +1,4 @@
 def custom_write(file_name, strings):
-    string = []
     strings_positions = {}
     number_string = 0
     file = open(file_name, 'w')
