@@ -1,7 +1,7 @@
 def custom_write(file_name, strings):
     strings_positions = {}
     number_string = 0
-    file = open(file_name, 'w')
+    file = open(file_name, 'w', encoding='utf-8')
     for string in strings:
         line_byte = file.tell()
         file.write(f'{string}\n')
