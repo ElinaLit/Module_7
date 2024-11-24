@@ -1,7 +1,7 @@
 import os
 import time
 
-directory ="/Users/elinalitovskaa/Documents/Urban/Python/07_Работа с файлами/01_работа с файлами"
+directory ="."
 
 for root, dirs, files in os.walk(directory):
     for file in files:
